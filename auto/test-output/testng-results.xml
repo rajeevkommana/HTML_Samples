@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="46316" started-at="2018-02-14T03:12:23Z" finished-at="2018-02-14T03:13:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="46316" started-at="2018-02-14T03:12:23Z" finished-at="2018-02-14T03:13:09Z">
+      <class name="selenium.auto.com.AppTest">
+        <test-method status="PASS" signature="linkedinLogin()[pri:0, instance:selenium.auto.com.AppTest@17d919b6]" name="linkedinLogin" duration-ms="46291" started-at="2018-02-14T08:42:23Z" finished-at="2018-02-14T08:43:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkedinLogin -->
+      </class> <!-- selenium.auto.com.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
