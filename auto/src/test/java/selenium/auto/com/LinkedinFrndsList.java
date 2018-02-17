@@ -1,5 +1,8 @@
 package selenium.auto.com;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -47,13 +50,32 @@ public class LinkedinFrndsList {
 		//get friendlist count.
 		String s=driver.findElement(By.xpath("//ul[@class='mn-connections__list ember-view']/div/h2")).getText();
 		
-		System.out.println("no. of friends list connections is:"+s);
+		System.out.println("no. of friends list connections is:"+s);		
 		
+		writeUsingFileWriter(s);
 		
 		Thread.sleep(3000);
 		
 		driver.close();
 		
 	}
+	
+	private static void writeUsingFileWriter(String data) {
+        File file = new File("/Users/rajeev/FrndsList.txt");
+        FileWriter fr = null;
+        try {
+            fr = new FileWriter(file);
+            fr.write(data);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally{
+            //close resources
+            try {
+                fr.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
   
 }

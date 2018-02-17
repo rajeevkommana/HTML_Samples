@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="selenium.auto.com.AppTest">
+      <class name="selenium.auto.com.LinkedinFrndsList">
         <methods>
           <include name="linkedinLogin"/>
         </methods>
-      </class> <!-- selenium.auto.com.AppTest -->
+      </class> <!-- selenium.auto.com.LinkedinFrndsList -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
