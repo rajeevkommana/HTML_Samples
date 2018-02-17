@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46316" started-at="2018-02-14T03:12:23Z" finished-at="2018-02-14T03:13:09Z">
+  <suite name="Default suite" duration-ms="64960" started-at="2018-02-17T06:56:34Z" finished-at="2018-02-17T06:57:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46316" started-at="2018-02-14T03:12:23Z" finished-at="2018-02-14T03:13:09Z">
-      <class name="selenium.auto.com.AppTest">
-        <test-method status="PASS" signature="linkedinLogin()[pri:0, instance:selenium.auto.com.AppTest@17d919b6]" name="linkedinLogin" duration-ms="46291" started-at="2018-02-14T08:42:23Z" finished-at="2018-02-14T08:43:09Z">
+    <test name="Default test" duration-ms="64960" started-at="2018-02-17T06:56:34Z" finished-at="2018-02-17T06:57:39Z">
+      <class name="selenium.auto.com.LinkedinFrndsList">
+        <test-method status="PASS" signature="linkedinLogin()[pri:0, instance:selenium.auto.com.LinkedinFrndsList@93081b6]" name="linkedinLogin" duration-ms="64902" started-at="2018-02-17T12:26:34Z" finished-at="2018-02-17T12:27:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkedinLogin -->
-      </class> <!-- selenium.auto.com.AppTest -->
+      </class> <!-- selenium.auto.com.LinkedinFrndsList -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

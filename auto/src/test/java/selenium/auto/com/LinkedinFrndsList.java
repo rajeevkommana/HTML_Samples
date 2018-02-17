@@ -15,7 +15,7 @@ public class LinkedinFrndsList {
 	WebDriver driver= new FirefoxDriver();
 	
 	@Test
-	public void linkedinLogin(){	
+	public void linkedinLogin() throws InterruptedException{	
 		
 		//maximise the window.
 		driver.manage().window().maximize();
@@ -48,6 +48,11 @@ public class LinkedinFrndsList {
 		String s=driver.findElement(By.xpath("//ul[@class='mn-connections__list ember-view']/div/h2")).getText();
 		
 		System.out.println("no. of friends list connections is:"+s);
+		
+		
+		Thread.sleep(3000);
+		
+		driver.close();
 		
 	}
   
