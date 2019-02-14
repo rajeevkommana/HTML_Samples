@@ -5,7 +5,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-style: italic;
 }
 
 header {
@@ -14,6 +14,7 @@ header {
 
 ul {
   list-style: none;
+  font-family: arial;
 }
 
 /* NAV BAR */
@@ -82,6 +83,7 @@ li.nav-links a:hover {
 
 .buttons {
   text-align: center;
+  color: lightgrey;
   padding-top: 30px;
   margin-bottom: 300px;
 }
@@ -130,6 +132,7 @@ footer ul a:hover {
  }
   
  .buttons {
+  color: lightgrey;
    display: none;
  }
   
