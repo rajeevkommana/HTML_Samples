@@ -1,168 +1,209 @@
-<style type="text/css">
-
-body { 
-  width: 100%;
-  height: 100%;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
-  font-style: italic;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
-header {
-  width: 100%;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
-
-ul {
+body {
+  line-height: 1;
+}
+ol, ul {
   list-style: none;
-  font-family: arial;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* NAV BAR */
-#nav_bar {
-  float: right;
+/** { 
+  outline: 1px solid black;
+}*/
+
+#header_buttons {
+    text-align: right;
+    padding-top: 10px;
+}
+#header_buttons a:hover{text-decoration: underline;}
+#header_buttons li, a {
+    color: gray;
+    text-decoration: none;
+    display: inline;
+    list-style: none;
+    padding: 4px;
+    font-family: Arial;
+    font-size: 13px;
 }
 
-#nav_bar li {
-  display: inline-block;
-  padding: 8px;
-}
-
-#nav_bar #sign_in {
-  background: #4887ef; 
-  margin-right: 25px;
-  padding: 7px 15px;
-  border-radius: 3px; 
-  font-weight: bold;
-}
-
-.nav-links {
-  color: #404040;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-li.nav-links a:hover {
-  text-decoration: underline;
-}
-
-#sign_in:hover { 
-  box-shadow: 1px 1px 5px #999;
-}
 
 #sign_in {
-  color: #fff;
+    display: inline-block;
+    margin: 3px 10px;
+    border-radius: 3px;
+    background-color: #29A0F0;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
-/* GOOGLE AREA */
-  .google  {
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  clear: both;
-  padding-top: 112px;
-  padding-bottom: 20px;
+li#sign_in {
+    display: block;
+    margin-bottom: 300px;
 }
 
-.form {
-  text-align: center;
+#sign_in:hover{box-shadow: 0px 1px 0px 0px #e6e6e6;}
+#sign_in a {
+    margin: 0 auto;
+/*        border:1px solid black;
+*/
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
 }
 
-#form-search { 
-  width: 450px;
-  line-height: 32px;
-  padding: 20px 10px;
+#sign-in-text {
+    margin-top: 20px;
+}
+/*DAMN -- This was/is CONFUSING but it sets the sign-in button properties*/
+div#header_buttons ul li#sign_in {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+/*    border: 1px solid black;
+*/    text-align: center;
+    margin-bottom: 25px;
 }
 
-.form #form-search {
-  padding: 0 8px;
-  box-shadow: 3px 3px #998;
+#apps a {
+    width: 60px;
+    background-position: center;
+    background-image: url("images.grid.png");
+/*    border: 1px solid black;
+*/}
+
+#sign_in a:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+#google_logo {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#google_logo > img{
+    display: block;
+    margin: 0 auto;
+}
+#query {
+    width: 572px;
+    margin: auto;
+    box-shadow:  3px 3px #998;
+}
+#query > input {
+    width:572px;
+    height:30px;
+    margin: auto;
+    background-image: url("images/microphone.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#query input[type="text"] {
+font-size: 17px;
 }
 
 .buttons {
-  text-align: center;
-  color: lightgrey;
-  padding-top: 30px;
-  margin-bottom: 300px;
+    width: 572px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
 }
 
-/* FOOTER */
-footer  {
-  background: #f2f2f2;
-  border-top: solid 2px #e4e4e4;
-  position: fixed;
-  bottom: 0;
-  padding-bottom: 0;
-  width: 100%;
-  
+button#search {
+    margin-top: 10px;
+    font: bold 11px Arial, sans-serif !important;
+    width: 95px;
+    height: 30px;
+    -webkit-border-radius: 0px;
+}
+button#lucky {
+    font: bold 11px Arial, sans-serif !important;
+    width: 110px;
+    height: 30px;
 }
 
-footer ul li {
-  display: inline;
-  color: #666666;
-  font-size: 14px;
-  padding: 14px;
+#footer {
+    position: absolute;
+    bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+/*    border: 1px solid black;
+*/    background-color: #e3e3e3;
 }
 
-footer ul {
-  float: left;
-  padding: 1px;
+
+
+
+#footer-left ul li{
+    float: left;
+/*    border:1px solid black;
+*/    display: inline;
+    padding: 5px 3px;
+    padding-top: 14px;
+    vertical-align: bottom;
 }
 
-footer ul a:hover {
-  text-decoration: underline;
+
+#footer-left ul li a{
+/*        border:1px solid black;
+*/
+    padding: 30px 8px;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
 }
 
-.footer-right {
-  float: right;
+#footer-right ul li
+{
+    float: right;
+    display: inline;
+    padding: 30px 8px;
+    padding-top: 14px;
+    vertical-align: bottom;
 }
 
-/* MEDIA QUERIES */
 
-@media screen and (max-width: 400px) {
- 
- li.nav-links a {
-    display: none;
-  }
-  
- #google_logo {
-   padding: 0;
- }
-  
- .buttons {
-  color: lightgrey;
-   display: none;
- }
-  
- #form-search {
-   width: 80%;
-
- }
-  
- footer {
-   bottom: 0;
- }
-  
- footer ul {
-   float: none;
-   padding-bottom: 2px;
-    
- }
-  
- .footer-left {
-   text-align: center;
-   margin: auto; 
-   padding-top: 10px;
-    
- }
-  
- .footer-right {
-   float: none;
-   text-align: center;
-   
- }
+#footer-right ul li a{
+    padding: 30px 8px;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
 }
-
-</style>
